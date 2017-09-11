@@ -1,0 +1,13 @@
+<% include partials/header %>
+
+<h1>Portfolio list page</h1>
+
+<% portfolio.forEach(function(portfolio){ %>
+    <div>
+        <h4><%= portfolio.name %></h4>
+        <img src="<%= portfolio.image %>">
+    </div>
+    
+<% }); %>
+
+<% include partials/footer %>
